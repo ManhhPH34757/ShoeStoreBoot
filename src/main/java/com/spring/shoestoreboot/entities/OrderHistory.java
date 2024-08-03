@@ -30,7 +30,7 @@ public class OrderHistory {
     @Column(name = "_description")
     private String description;
 
-    @Column(name = "_time_exchange")
-    private Instant timeExchange;
+    @Column(name = "_changed_time")
+    private Instant changedTime;
 
 }

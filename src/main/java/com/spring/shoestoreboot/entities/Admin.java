@@ -51,6 +51,18 @@ public class Admin {
     @Column(name = "_email")
     private String email;
 
+    @Column(name = "_password")
+    private byte[] password;
+
+    @Size(max = 30)
+    @Column(name = "_role", length = 30)
+    private String role;
+
+    @Size(max = 255)
+    @Nationalized
+    @Column(name = "_status")
+    private String status;
+
     @Column(name = "_birthday")
     private LocalDate birthday;
 

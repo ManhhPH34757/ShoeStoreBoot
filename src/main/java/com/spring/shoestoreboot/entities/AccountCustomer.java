@@ -25,10 +25,6 @@ public class AccountCustomer {
     @JoinColumn(name = "_id_customer", nullable = false)
     private Customer idCustomer;
 
-    @Size(max = 50)
-    @Column(name = "_user_name", length = 50)
-    private String userName;
-
     @Column(name = "_password")
     private byte[] password;
 

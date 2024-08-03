@@ -41,9 +41,4 @@ public class OrderDetail {
     @Column(name = "_status")
     private String status;
 
-    @Size(max = 255)
-    @Nationalized
-    @Column(name = "_product_status")
-    private String productStatus;
-
 }

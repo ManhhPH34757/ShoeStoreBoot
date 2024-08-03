@@ -51,6 +51,9 @@ public class Product {
     @JoinColumn(name = "_id_material")
     private Material idMaterial;
 
+    @Column(name = "_weight")
+    private Double weight;
+
     @Column(name = "_date_created")
     private Instant dateCreated;
 

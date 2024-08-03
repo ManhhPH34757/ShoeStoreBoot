@@ -42,11 +42,6 @@ public class Order {
     @JoinColumn(name = "_id_coupons")
     private Coupon idCoupons;
 
-    @ManyToOne
-    @OnDelete(action = OnDeleteAction.CASCADE)
-    @JoinColumn(name = "_id_pay")
-    private Pay idPay;
-
     @Size(max = 100)
     @Nationalized
     @Column(name = "_customer_name", length = 100)
